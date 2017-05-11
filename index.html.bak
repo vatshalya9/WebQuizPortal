@@ -1,0 +1,79 @@
+<!doctype html>
+<html >
+ <head>
+   <title>Quiz Whiz</title>
+   <style>
+body {background-color:#E0ECF8}
+#header
+{
+
+    text-align:center;
+    padding:5px;
+}
+#image
+{
+margin:120px;
+padding:20px;
+}
+#login
+{
+margin:120px;
+padding:20px;
+position:right;
+}
+table.pos_relative {
+/*     position: RELATIVE; */
+    top:1px;
+    right: 20px;
+	background-color:white;
+	padding:20px;
+}
+   </style>
+ </head>
+ <body>
+ <div id="header" >
+ <p><font size="20">Quiz Whiz</p></font>
+    </div>
+  <div id="image">
+  <table align="center">
+  <td>
+  <img src="quiz_image.jpg" alt="Quiz image" style="width:304px;height:228px;align:center">
+  <p> Quiz Whiz is an online quiz website </p>
+ </td>
+ <td>
+<TABLE class="pos_relative" align="center">
+
+ <TR>
+<TD>
+ <label for="Username">Username</label>
+ </td>
+  <td>
+  <input type="text" id="username" name="uname">
+  </td>
+  </TR>
+  <tr>
+  <td>
+  <label for="Password">Password</label>
+   </td>
+   <td>
+   <input type="password" id="password" name="pswd"><br>
+</td>
+</tr>
+<tr>
+<td></td>
+<td id="rigth">
+
+<button type="Submit" >Login</button>
+</td>
+
+</tr>
+ <tr>
+    <td></td>
+    <td><a href="Signup.html">Sign Up </a><a href="Aboutus.html">About Us    </a><a href="Html.html">Help </a></td>
+  </tr>
+
+</TABLE>
+</td>
+  </div>
+ </body>
+</html>

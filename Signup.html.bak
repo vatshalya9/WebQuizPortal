@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>Signup</title>
+  <style>
+  body {background-color:#E0ECF8}
+  #regsection
+  {
+   text-align:center;
+    padding:5px;
+  }
+  #header
+{
+    text-align:center;
+    padding:5px;
+}
+table.tbl_effect
+{
+background-color:white;
+padding:20px;
+}
+  </style>
+
+ </head>
+ <body>
+ <div id ="header">
+ <p><b><font size="20">Welcome To Quiz Whiz</b></font></p>
+ <br>
+ <br>
+ <p><b><font size="6">Registration Form</b></font></p>
+ </div>
+  <div id="regsection">
+  <table class="tbl_effect" align= "center">
+<tr>
+<td>
+ <label for="Username">Username</label>
+</td>
+<td>
+ <input type="text" id="username" name="uname">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="Password">Password</label>
+</td>
+<td>
+<input type="password" id="password" name="pswd"><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="Password">Confirm Password</label>
+</td>
+<td>
+<input type="password" id="confmpassword" name="confmpswd"><br>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+  </table>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>Signup</title>
+  <link rel="stylesheet" type="text/css" href="design.css">
+     <script >
+ function myFunction() {
+    document.getElementById("myForm").reset();
+}
+</script>
+
+ </head>
+ <body>
+ <div id ="header">
+ <p><b><font size="20">Welcome To Quiz Whiz</b></font></p>
+ <br>
+ <br>
+ 
+ </div>
+  <div id="regsection">
+  <form ID="myForm" name="index" action="index.html"  onsubmit="return validateForm()" method="post">
+  <fieldset>
+    <legend><p><b><font size="6">Registration Form</b></font></p></legend>
+  <table class="tbl_effect" align= "center">
+  <tr>
+<td>
+ <label >FirstName</label>
+</td>
+<td>
+ <input type="text" id="firstname" name="fname" required>
+</td>
+</tr>
+<tr>
+<td>
+ <label >LastName</label>
+</td>
+<td>
+ <input type="text" id="lastname" name="lname" required>
+</td>
+</tr>
+<tr>
+<td>
+ <label for="Username">Username</label>
+</td>
+<td>
+ <input type="text" id="username" name="uname" required>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="Password">Password</label>
+</td>
+<td>
+<input type="password" id="password" name="pswd" required><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="Password">Confirm Password</label>
+</td>
+<td>
+<input type="password" id="confmpassword" name="confmpswd" required><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Email Id </label>
+</td>
+<td>
+<input type="email" id="email name="email" required>
+</td>
+</tr>
+
+<tr>
+<td><label>DOB</label></td>
+<td><input type="TEXT" id="DOB" name="DOB" required></td>
+</tr>
+<tr>
+<td><label>Phone number</label></td>
+<td><input type="number" id="number" name="number" required></td>
+</tr>
+<tr>
+<td><label>Gender</label></td>
+<td><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" required value="male">Female</td>
+</tr>
+<tr>
+<td><label>Address</label></td>
+<td><textarea rows="4" cols="50">
+
+</textarea></td>
+</tr>
+<tr>
+<td></td>
+<td><button type="Submit" >Register</button><input type="BUTTON" onclick="myFunction()" value="Clear"></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+  </table>
+  </fieldset>
+
+  </form>
+  </div>
+ </body>
+</html>

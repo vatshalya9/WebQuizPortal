@@ -1,0 +1,142 @@
+<!doctype html>
+<html >
+ <head>
+   <title>Quiz Whiz</title>
+   <style>
+   body {
+ background-image:url("lite.jpg");
+	background-repeat:no-repeat; 
+	 background-size: 100%;
+ /*   body {background-color:#E0ECF8} */
+    }
+#header
+{
+        padding:5px;
+}
+#image
+{
+margin:120px;
+padding:20px;
+}
+#login
+{
+margin:120px;
+padding:20px;
+position:right;
+}
+table.pos_relative {
+/*     position: RELATIVE; */
+    top:1px;
+    right: 20px;
+	background-color:white;
+	padding:20px;
+}
+   </style>
+   <script >
+   function checkPassword(str)
+   {
+     var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+     return re.test(str);
+   }
+function validateForm() {
+    var x = document.forms["index"]["uname"].value;
+    if (x==null || x=="") {
+        alert("User name must be filled out");
+        return false;
+    }
+    var letters = /^[A-Za-z]+$/;  
+    if(x.match(letters))  
+      {  
+       return true;  
+      }  
+    else  
+      {  
+      alert("Only alphabets must be filled for username"); 
+      return false;  
+      }
+    var y = document.forms["index"]["pswd"].value;
+    if (y==null || y=="") {
+        alert("Password name must be filled out");
+        return false;
+    }
+    if(!checkPassword(myForm.pswd.value)) {
+	        alert("The password you have entered is not valid!");
+	      myForm.pswd.focus();
+	        return false;
+	      }
+   /*  if(y != "" || y !==null) {
+        if(forms.pswd.value.length < 6) {
+          alert("Error: Password must contain at least six characters!");
+          //form.pswd.focus();
+          return false;
+        }
+        if(y == x) {
+            alert("Error: Password must be different from Username!");
+           // form.pwd1.focus();
+            return false;
+          }
+  } */
+    
+}
+</script>
+ </head>
+ <body>
+ 
+
+ <div>
+ <p style="width:500px;height:100px;text-align:center"><font size="20" color="#2C4762">Welcome to Quiz Whiz</p></font>
+    </div>
+  <div id="image">
+  <table align="center">
+  <td>
+  <img src="quiz_image.jpg" alt="Quiz image" style="width:304px;height:228px;align:center">
+  <p> Quiz Whiz is an online quiz website </p>
+ </td>
+ <td>
+ <form name="index"  action="Log" method="post">
+  <fieldset>
+    <legend>Login:</legend>
+<TABLE class="pos_relative" align="center">
+
+ <TR>
+<TD>
+ <label for="Username">Username</label>
+ </td>
+  <td>
+  <input type="text" id="username" name="uname"  required>
+  </td>
+  </TR>
+  <tr>
+  <td>
+  <label for="Password">Password</label>
+   </td>
+   <td>
+   <input type="password" id="password" name="pswd"  required><br>
+</td>
+</tr>
+<tr>
+<td></td>
+<td id="rigth">
+
+<button type="Submit" onclick="validateForm()" >Login</button>
+</td>
+
+</tr>
+<table>
+<tr>
+<a href="ForgotPassword.html">Forgot password </a>
+</tr>
+ <tr>
+  <td><a href="Signup.html">Sign Up </a></td>
+<!--   <td>
+  <a href="AboutUs.html">About Us</a></td>
+  <td><a href="Help.html">Help </a></td>-->
+  </tr>
+</table>
+</TABLE>
+</fieldset>
+</form>
+</td>
+  </div>
+ </body>
+</html>

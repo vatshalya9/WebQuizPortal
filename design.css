@@ -1,0 +1,105 @@
+@CHARSET "ISO-8859-1";
+
+    body 
+	{
+	/*background-color:#E0ECF8*/
+	background-image:url("lite.jpg");
+	background-repeat:no-repeat; 
+	 background-size: 100%;
+	}
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        float: left;
+        width: 150px;
+        text-align: center;
+        line-height: 21px;
+    }
+    ul li a{
+        display: block;
+        padding: 5px 10px;
+        color:#FFFFFF;
+        background:#2C4762;
+        text-decoration: none;
+    }
+    ul li a:hover{
+    color: #fff;
+        background: #939393;
+    }
+    ul li ul{
+        display: none;
+    }
+    ul li:hover ul{
+        display: block; /* display the dropdown */
+    }
+	#regsection
+    {
+	position: fixed;
+    margin:7% 5% 10% 40%;
+    text-align:center;
+    
+    }
+    #regsection1
+    {
+	position: fixed;
+    margin:4% 5% 10% 30%;
+    text-align:center;
+    
+    }
+     #regsection2
+    {
+	position: fixed;
+    margin:0% 5% 5% 60%;
+    text-align:center;
+    
+    }
+      #regsection3
+    {
+	position: fixed;
+    margin:0% 5% 5% 20%;
+    text-align:center;
+    float:left;
+	width:800px;
+	overflow-y: auto;
+	height: 600px;
+    
+    }
+    #scrollbar
+    {
+    float:left;
+	width:1000px;
+	overflow-y: auto;
+	height: 100px;
+    }
+    #header
+    {
+    text-align:center;
+    padding:5px;
+    }
+    table.tbl_effect
+    {
+      text-align:left;
+    background-color:white;
+	padding:20px;
+    border: 2px;
+	border-style: solid;
+	border-color: #2C4762;
+    border-radius: 25px;
+    }
+     table.tbl_effect1
+    {
+      text-align:left;
+    background-color:white;
+	padding:2px;    
+	/* border-style: solid; */
+	border-color:#2C4762;
+   
+    }
+    #footer
+     { position: fixed;
+     TOP: 600PX;text-align:center; 
+     width: 90%; 
+     margin:0 auto; height:30px; 
+     }

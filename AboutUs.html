@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>About Us</title>
+  <style>
+  body {background-color:#FFFFFF}
+  #regsection
+  {
+  position: fixed;
+    top: 150px;
+    right: 455px;
+    text-align:center;
+    padding:5px;
+  }
+  #header
+{
+    text-align:center;
+    padding:5px;
+}
+table.tbl_effect
+{
+ text-align:left;
+background-color:white;
+padding:20px;
+ border: 2px solid;
+    border-radius: 25px;
+}
+  </style>
+     <script >
+function validateForm() {
+    var x = document.forms["index"]["email"].value;
+    if (x!=null || x!="") {
+        alert("Please Check your mail for password");
+        return false;
+    }
+  
+  }
+</script>
+
+ </head>
+ <body>
+ <div id ="header">
+ <p><b><font size="20">Welcome To Quiz Whiz</b></font></p>
+ <br>
+ <br>
+<a href=Home.html>Home</a>
+ </div>
+  <div id="regsection">
+ <form name="index" action="index.html"  onsubmit="return validateForm()" method="post">
+  <fieldset>
+    <legend> <p><b><font size="6">About Us</b></font></p></legend>
+	<table align="center">
+  <td>
+  <img src="quiz_image.jpg" alt="Quiz image" style="width:304px;height:228px;align:center">
+  <p> Quiz Whiz is an online quiz website </p>
+ </td>
+   
+  </form>
+  </div>
+ </body>
+</html>
